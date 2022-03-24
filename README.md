@@ -15,3 +15,10 @@ In this repo we have Two mini project
         2. Segregation command to segregate file based on their extension types and store them in new folder as per their type
         3. Tree command to print tree structure of the given directory
     This project handles the edge case of invalid path and proper indentation 
+    
+# Webscrapping - Covid Data Scrapper
+    This Project is related to scrapping of data from worldometers.info 
+    Just simply takes data from worldometers and display Total cases, TOtal deaths and recovered cases number.
+   
+# Webscarpping - Espn IPL 2020-2021 Data scrapper
+    
