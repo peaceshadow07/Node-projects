@@ -58,6 +58,9 @@ function getMatchDetails(html) {
                 let fours = selectTool(row[5]).text();
                 let sixes = selectTool(row[6]).text();
                 let sr = selectTool(row[7]).text();
+                playerName = playerName.split("(c)")[0].trim();
+                playerName = playerName.split("†")[0].trim();
+                // console.log(playerName);
                 console.log(`${playerName} | ${runs} | ${balls} | ${fours} | ${sixes} | ${sr}`);
                 // console.log(team1,"---",team2);
                 processInformation(dateOfMatch, venueOfMatch, matchResult, team1, team2, playerName, runs, balls, fours, sixes, sr);
