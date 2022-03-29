@@ -1,0 +1,1 @@
+lorem Epsium for test of promises in JS
