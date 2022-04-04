@@ -22,7 +22,7 @@ function getIssues(issuesLink, projectName,topicFolderPath,topicLink){
                 // create pdf file
                 doc.pipe(fs.createWriteStream(`${topicFolderPath}/${projectName}.pdf`));
                 // Add Project name to every new page added to pdf
-                doc.on('pageAdded', () => doc.fontSize(24).fillColor('green').text(projectName.toUpperCase(),{link : topicLink}));
+                doc.on('pageAdded', () => doc.fontSize(12).fillColor('black').text(projectName.toUpperCase(),{link : topicLink}));
                 // add title to the first page of pdf
                 doc.fontSize(24).fillColor('green').text(projectName.toUpperCase()+"\n\n",{link : topicLink});
                 for(let i = 0; i < issuesArr.length; i++){
